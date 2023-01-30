@@ -1,8 +1,8 @@
-//Interação
+
 const citySearchInput = document.getElementById('city-search-input')
 const citySearchButton = document.getElementById('city-search-button')
 console.log (citySearchButton)
-//Exebição
+
 const currentDate = document.getElementById('current-date')
 const cityName = document.getElementById('city-name')
 const weatherIcon = document.getElementById('weather-icon')
@@ -21,7 +21,7 @@ citySearchButton.addEventListener("click", () => {
     getCityWeather(cityName)
 })
 
-navigator.geolocation.getCurrentPosition(
+navigator.geolocation.getCurrentPosition (
     (position) => {
         let lat = position.coords.latitude
         let lon = position.coords.longitude
